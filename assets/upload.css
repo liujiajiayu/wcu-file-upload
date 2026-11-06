@@ -1,0 +1,29 @@
+.wcu-uploader{margin:1.25rem 0;font:inherit}
+.wcu-heading{font-weight:700;margin-bottom:.35rem}
+.wcu-heading .required{color:#d63638}
+.wcu-description{margin:.25rem 0 .75rem;color:#646970;font-size:.94em}
+.wcu-dropzone{display:flex;min-height:132px;padding:22px;border:2px dashed #b8c2d0;border-radius:12px;background:#f8fafc;align-items:center;justify-content:center;flex-direction:column;gap:4px;text-align:center;cursor:pointer;transition:.2s ease}
+.wcu-dropzone:hover,.wcu-dropzone:focus,.wcu-dropzone.is-dragging{border-color:#6366f1;background:#eef2ff;outline:none;box-shadow:0 0 0 3px rgba(99,102,241,.12)}
+.wcu-drop-icon{display:grid;width:36px;height:36px;border-radius:50%;place-items:center;background:#e0e7ff;color:#4338ca;font-size:22px;font-weight:700;margin-bottom:3px}
+
+/* 文件列表：改为 block 布局并锁定行内排版，避免被主题的 grid/flex 规则挤压成逐字换行 */
+.wcu-file-list{display:block!important;list-style:none!important;margin:.75rem 0 0!important;padding:0!important}
+.wcu-file-list>li,.wcu-file-list>li.wcu-file-row{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;gap:12px!important;box-sizing:border-box!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0 0 8px!important;padding:.65rem .75rem!important;border:1px solid #dcdcde!important;border-radius:8px!important;background:#fff!important;list-style:none!important;float:none!important;position:static!important}
+.wcu-file-list>li:last-child{margin-bottom:0!important}
+.wcu-file-list>li::before,.wcu-file-list>li::after{display:none!important;content:none!important}
+.wcu-file-details{display:flex!important;flex:1 1 auto!important;flex-direction:column!important;min-width:0!important;width:auto!important;max-width:none!important;float:none!important}
+.wcu-file-name{display:block!important;width:auto!important;max-width:100%!important;min-width:0!important;font-weight:600;white-space:nowrap!important;word-break:normal!important;overflow-wrap:normal!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.wcu-file-details small{display:block!important;width:auto!important;color:#646970;white-space:nowrap!important;word-break:normal!important;overflow-wrap:normal!important}
+.wcu-file-status{flex:0 0 auto!important;margin-left:auto!important;white-space:nowrap!important;font-size:.88em;color:#646970}
+.wcu-file-row.is-success .wcu-file-status{color:#15803d}
+.wcu-file-row.is-error .wcu-file-status{color:#b91c1c}
+.wcu-file-row.is-removing{opacity:.55;pointer-events:none}
+.wcu-remove{border:0;background:transparent;color:#b91c1c;text-decoration:underline;cursor:pointer;padding:.25rem;flex:0 0 auto!important;white-space:nowrap!important}
+.wcu-error{margin-top:.65rem;padding:.6rem .75rem;border-left:4px solid #d63638;background:#fcf0f1;color:#8a2424}
+.wcu-order-files ul,.wcu-admin-order-files ul{margin:.3rem 0 .7rem 1.2rem}
+@media(max-width:480px){
+.wcu-file-list>li.wcu-file-row{flex-wrap:wrap!important;align-items:flex-start!important}
+.wcu-file-details{flex:1 1 100%!important}
+.wcu-file-status{margin-left:0!important}
+.wcu-remove{width:100%!important;text-align:left!important;padding-left:0!important}
+}
